@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_big">22sp</dimen>
+    <dimen name="app_body">14sp</dimen>
+    <dimen name="app_sub">12sp</dimen>
+    <dimen name="std_padding">10dp</dimen>
+    <dimen name="std_margin">10dp</dimen>
+    <dimen name="std_gap">15dp</dimen>
+    <dimen name="btn_margin">30dp</dimen>
+    <dimen name="element_padding">30dp</dimen>
+    <dimen name="element_gap">8dp</dimen>
+</resources>

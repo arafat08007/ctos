@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Customer_signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/headerlayout"
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+       <TextView
+           android:id="@+id/btn_customer_back"
+           android:drawableStart="@drawable/arrow_left_black"
+           android:layout_width="wrap_content"
+           android:padding="@dimen/std_padding"
+           android:layout_marginStart="@dimen/std_margin"
+           android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@string/customer_signup"
+            android:textStyle="bold"
+            android:textSize="@dimen/app_big"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="@dimen/std_margin"
+            android:padding="@dimen/std_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/white_round_corner_box"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/element_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="headerlayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your phone number"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Phn_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_gap"
+            android:background="@drawable/white_round_input_box"
+            android:inputType="text"
+            android:padding="@dimen/element_gap" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your new password"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Pass_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_gap"
+            android:background="@drawable/white_round_input_box"
+            android:inputType="textVisiblePassword"
+            android:padding="@dimen/element_gap" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your first name"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fname_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_gap"
+            android:background="@drawable/white_round_input_box"
+            android:inputType="text"
+            android:padding="@dimen/element_gap" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your last name"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/lname_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_gap"
+            android:background="@drawable/white_round_input_box"
+            android:inputType="text"
+            android:padding="@dimen/element_gap" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your address"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/address_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_gap"
+
+            android:background="@drawable/white_round_input_box"
+            android:inputType="text"
+            android:padding="@dimen/element_gap" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your post code"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/zip_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_gap"
+            android:background="@drawable/white_round_input_box"
+            android:inputType="number"
+            android:padding="@dimen/element_gap" />
+
+        <Button
+            android:id="@+id/btn_customer_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_gap"
+            android:background="@drawable/primary_btn_bg"
+            android:padding="@dimen/std_padding"
+            android:text="Enter"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

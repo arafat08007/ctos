@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CtoS</string>
+    <string name="welcome_txt">Welcome to APP Name</string>
+    <string name="intro_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
+    <string name="customer">Are you a customer?</string>
+    <string name="seller">Are you a seller?</string>
+    <string name="customer_signup">Sign up as a customer</string>
+    <string name="seller_signup">Sign up as a seller</string>
+
+    <string name="seller_signin">Sign in to seller account</string>
+    <string name="customer_signin">Sign in to customer account</string>
+</resources>

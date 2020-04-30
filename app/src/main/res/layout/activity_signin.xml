@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Signin">
+
+    <LinearLayout
+        android:id="@+id/headerlayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+
+        <TextView
+            android:id="@+id/btn_customer_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/std_margin"
+            android:drawableStart="@drawable/arrow_left_black"
+            android:padding="@dimen/std_padding" />
+
+        <TextView
+            android:id="@+id/signup_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/std_margin"
+            android:padding="@dimen/std_padding"
+            android:text="@string/seller_signin"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/app_big"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="550dp"
+        android:background="@drawable/white_round_corner_box"
+
+        android:orientation="vertical"
+        android:padding="@dimen/element_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="headerlayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your phone number"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phone_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_gap"
+            android:background="@drawable/white_round_input_box"
+            android:inputType="text"
+            android:padding="@dimen/element_gap" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your new password"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_gap"
+            android:background="@drawable/white_round_input_box"
+            android:inputType="textVisiblePassword"
+            android:padding="@dimen/element_gap" />
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_gap"
+            android:background="@drawable/primary_btn_bg"
+            android:padding="@dimen/std_padding"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
